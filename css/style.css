@@ -1,0 +1,201 @@
+.fa{
+    margin-right: 5px;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(#465751,#232F2D);
+    font-size: 2vw;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    height: 100%;
+    transition: 500ms;
+}
+
+nav li a:hover {
+    box-shadow: 0 0 0 1px white;
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+body{
+    background: linear-gradient(#50675F,#1A2020);
+    color: white;
+}
+
+.start{
+    display: flex;
+    margin-top: 90px;
+}
+
+.start h1 , .section1-bio h1{
+    font-family: papyrus;
+    font-size: 4em;
+}
+.start .first-column,.second-column,.third-column{
+    width: 33%;
+}
+
+.second-column{
+    position: relative;
+    background-image: url(./images/q.jpg);
+    border-radius: 50%;
+}
+
+.second-column img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.swe{
+    position:absolute;
+    top:300px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    font-family:papyrus,monospace;
+    font-size: 1.5em;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+}
+
+.third-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2 a{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    padding: 15px;
+    margin: 25px;
+    border: 2px outset white;
+    background: linear-gradient(#50675F,#1A2020);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition:border-radius 500ms;
+}
+
+.section2 a::after{
+    content: "";
+    display: block;
+    position: relative;
+    bottom:20px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.section2 a:hover{
+    opacity: 0.8;
+    border-radius: 45% 0 0 45%;
+    transition: border-radius 500ms;
+}
+
+.section2 a:active{
+    border: 3px inset #50675F;
+    transition: 0ms;
+}
+
+
+.section2 a em{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: text-decoration 500ms;
+}
+
+.section2 a em:hover{
+    text-decoration: underline;
+    transition: text-decoration 5s;
+}
+
+.bio-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 25%; */
+    /* text-align: center; */
+}
+
+.papy-rem{
+    font-size: 2rem;
+    font-family: papyrus;
+}
+
+.section1-bio p{
+    margin-top: 25px;
+}
+
+.section1-bio h1,.section1-bio h2{
+    text-decoration: underline;
+}
+
+.section1-bio img{
+    float: left;
+}
+
+.section1-skills{
+    margin-top: 90px;
+}
+
+.section1-skills ol > li{
+    font-size: 3rem;
+}
+
+.section1-skills ul  li{
+    text-decoration: underline;
+    margin: 15px;
+}
+
+.section1-skills .td-none li{
+    text-decoration: none;
+}
+
+.section1-skills img{
+    float: left;
+}
+
+.first-column p, .third-column p{
+    font-size: 1.3em;
+}
+
+.name1{
+    text-shadow: 15px 15px 5px #000000;
+}
+
+.name,.swe{
+    text-shadow: 2px 2px 1px black;
+}
