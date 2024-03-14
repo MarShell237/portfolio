@@ -1,0 +1,17 @@
+.name{
+    text-shadow: 2px 2px 1px black;
+}
+
+.bio-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 25%; */
+    /* text-align: center; */
+}
+
+.section1-bio img{
+    float: left;
+}
+

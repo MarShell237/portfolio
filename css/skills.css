@@ -1,0 +1,20 @@
+.section1-skills{
+    margin-top: 90px;
+}
+
+.section1-skills ol > li{
+    font-size: 3rem;
+}
+
+.section1-skills ul  li{
+    text-decoration: underline;
+    margin: 15px;
+}
+
+.section1-skills .td-none li{
+    text-decoration: none;
+}
+
+.section1-skills img{
+    float: left;
+}
