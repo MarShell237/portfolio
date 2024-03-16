@@ -73,27 +73,43 @@ section{
     nav ul{
         display: none;
     }
-
+    
     nav .menu li{
         margin: 0;
         font-size: medium;
     }
-
+    
     nav{
         display: flex;
         justify-content: space-between;
         background: linear-gradient(#465751,#232F2D);
     }
-
+    
     nav ul img{
         display: none;
     } 
+    
+    nav li a:hover {
+        box-shadow: 0 0 0 0px white;
+        border-radius: 0;
+    }
+
+    nav li a:active {
+        transition: 0s;
+    }
+
+    nav li a:active {
+        background-color: #1A2020;
+        scale: 110%;
+        text-shadow: 15px 15px 5px #000000;
+        transition: 0s;
+    }
 
     .resp-img{
         display: inline;
     }
-
-
+    
+    
     .responsive-menu{
         height: 50px;
         width: 50px;
@@ -114,12 +130,12 @@ section{
         transform: translateY(-10px);
         transition: 0.5s;
     }
-
+    
     .responsive-menu.active::after{
         box-shadow: 0 0 0 #fff;
         transform: rotate(45deg);
     }
-
+    
     .responsive-menu::before{
         position: absolute;
         content: "";
@@ -133,7 +149,7 @@ section{
     .responsive-menu.active::before{
         transform: rotate(-45deg);
     }
-
+    
     nav .menu.responsive{
         display: flex;
         position: absolute;
@@ -142,7 +158,9 @@ section{
         flex-direction: column;
         background-color: #222;
         align-items: unset;
+        border: 5px outset #1A2020;
+        border-radius: 10px;
     }
-
+    
     
 }
