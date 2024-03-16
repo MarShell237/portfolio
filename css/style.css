@@ -27,6 +27,10 @@ nav ul {
     font-size: 2vw;
 }
 
+.resp-img{
+    display: none;
+}
+
 nav li a {
     display: block;
     color: white;
@@ -59,4 +63,86 @@ section{
 .papy-rem{
     font-size: 2rem;
     font-family: papyrus;
+}
+
+@media screen and (max-width:768px) {
+    nav ul.menu{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .menu li{
+        margin: 0;
+        font-size: medium;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(#465751,#232F2D);
+    }
+
+    nav ul img{
+        display: none;
+    } 
+
+    .resp-img{
+        display: inline;
+    }
+
+
+    .responsive-menu{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .responsive-menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #fff;
+        width: 28px;
+        box-shadow: 0 10px 0 #fff;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::after{
+        box-shadow: 0 0 0 #fff;
+        transform: rotate(45deg);
+    }
+
+    .responsive-menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #fff;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::before{
+        transform: rotate(-45deg);
+    }
+
+    nav .menu.responsive{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #222;
+        align-items: unset;
+    }
+
+    
 }

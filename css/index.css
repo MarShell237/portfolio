@@ -3,6 +3,7 @@ section{
     grid-template-rows:75% 25%;
     grid-template-columns:1fr 1fr 1fr;
     margin-top: 35px;
+    padding: 0;
 }
 
 .one{
@@ -108,4 +109,28 @@ section{
 
 p{
     font-size: 1.3em;
+}
+
+@media screen and (max-width:768px) {
+    section{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .one,.two,.three,.four{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .four{
+        flex-direction: column;
+    }
+
+    .four a:hover{
+        opacity: 0.8;
+        border-radius: 10px;
+    }
 }

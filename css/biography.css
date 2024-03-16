@@ -16,3 +16,9 @@
     float: left;
 }
 
+@media screen and (max-width:768px) {
+    .section1-bio img{
+        float:none;
+    }
+}
+
