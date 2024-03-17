@@ -71,13 +71,13 @@ section{
     text-decoration: none;
     color: white;
     border-radius: 10px;
-    transition:border-radius 500ms;
+    transition:border-radius 500ms 200ms;
 }
 
 .four a:hover{
     opacity: 0.8;
     border-radius: 45% 0 0 45%;
-    transition: border-radius 500ms;
+    /* transition: border-radius 500ms 100ms; */
 }
 
 .four a:active{
